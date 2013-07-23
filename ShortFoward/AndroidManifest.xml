@@ -15,7 +15,8 @@
         
         <activity
             android:name="br.com.shortfoward.SearchableActivity" 
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateVisible" >
 	        <intent-filter>
 	            <action android:name="android.intent.action.SEARCH"  />
 	
