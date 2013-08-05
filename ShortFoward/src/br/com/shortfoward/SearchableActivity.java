@@ -12,7 +12,7 @@ public class SearchableActivity extends Activity {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.search_layout);
 	    InputMethodManager inputManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-        SearchView search = (SearchView)findViewById(R.id.searchview);
+        SearchView search = (SearchView)findViewById(R.id.sufixo);
 	    search.setIconifiedByDefault(false);
 	    search.setQueryHint("Sufixo");
 	    ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(search, InputMethodManager.SHOW_FORCED);

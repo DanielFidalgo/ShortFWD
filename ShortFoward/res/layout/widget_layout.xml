@@ -6,10 +6,11 @@
     android:background="@drawable/widgetwhite">
 
 
-    <Button
+    <ImageButton
         android:id="@+id/btn"
         android:layout_width="116dp"
         android:layout_height="wrap_content"
-        android:text="Pesquisar" />
+        android:src="@drawable/link_go"
+        android:contentDescription="@string/search_hint" />
 
 </LinearLayout>

@@ -3,11 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="72dp"
      android:background="@drawable/background">
-
+   <Spinner
+            android:id="@+id/prefixo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:entries="@array/prefixos"
+            />
     <SearchView
-        android:id="@+id/searchview"
-        android:layout_width="274dp"
-        android:layout_height="wrap_content" >
+        android:id="@+id/sufixo"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content" 
+        android:queryHint="@string/hint"
+        android:iconifiedByDefault="false"
+        >
+
+       
+
     </SearchView>
 
 </LinearLayout>
