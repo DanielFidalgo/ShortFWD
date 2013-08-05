@@ -1,7 +1,6 @@
 package br.com.shortfoward;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.SearchView;
@@ -15,7 +14,7 @@ public class SearchableActivity extends Activity {
         SearchView search = (SearchView)findViewById(R.id.sufixo);
 	    search.setIconifiedByDefault(false);
 	    search.setQueryHint("Sufixo");
-	    ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(search, InputMethodManager.SHOW_FORCED);
+	    inputManager.showSoftInput(search,InputMethodManager.SHOW_IMPLICIT);
 	    
 	    
 	    
