@@ -15,14 +15,15 @@
         
         <activity
             android:name="br.com.shortfoward.SearchableActivity" 
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:windowSoftInputMode="stateVisible" >
-	        <intent-filter>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:windowSoftInputMode="stateAlwaysVisible">
+            	<intent-filter>
 	            <action android:name="android.intent.action.SEARCH"  />
 	
 	        </intent-filter>
 	        <meta-data android:name="android.app.searchable"
-	                   android:resource="@xml/searchable"/>
+	                   android:resource="@xml/searchable"
+	                   />
     	</activity>
         <receiver android:name="br.com.shortfoward.widget.ShortFowardWidget" android:label="Short Foward">
 			  <intent-filter>
