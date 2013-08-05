@@ -5,4 +5,23 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
  	<string name="search_hint">Pesquise</string>
+ 	<string name="hint">Sufixo</string>
+ 	<string-array name="prefixos">
+		<item>bit.ly</item>
+		<item>flic.kr</item>
+		<item>goo.gl</item>
+		<item>is.gd</item>
+		<item>its.my</item>
+		<item>j.mp</item>
+		<item>lru.jp</item>
+		<item>mash.to</item>
+		<item>migre.me</item>
+		<item>ow.ly</item>
+		<item>ping.fm</item>
+		<item>redir.ec</item>
+		<item>su.pr</item>
+		<item>t.co</item>
+		<item>tiny.ly</item>
+		<item>tinyurl.com</item>
+	</string-array>
 </resources>

@@ -5,10 +5,11 @@
     android:orientation="vertical" 
     android:background="@drawable/widgetwhite">
 
-    <Button
+    <ImageButton
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pesquisar" />
+        android:src="@drawable/link_go"
+        android:contentDescription="@string/search_hint" />
 
 </LinearLayout>
