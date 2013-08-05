@@ -2,17 +2,15 @@ package br.com.shortfoward.widget;
 
 
 
-import br.com.shortfoward.R;
-import br.com.shortfoward.SearchableActivity;
 import android.app.PendingIntent;
-import android.app.SearchManager;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
-import android.widget.Toast;
+import br.com.shortfoward.R;
+import br.com.shortfoward.SearchableActivity;
 
 public class ShortFowardWidget extends AppWidgetProvider {
 	private static String CLICK_ACTION_SEARCH ="search";
@@ -22,9 +20,10 @@ public class ShortFowardWidget extends AppWidgetProvider {
 		// TODO Auto-generated method stub
 		super.onReceive(context, intent);
 		
-		if (intent.getAction().equals(CLICK_ACTION_SEARCH)) {
+		if (intent.getAction().equals(CLICK_ACTION_SEARCH))
+		{
 			Intent intentShare = new Intent(context,SearchableActivity.class);
-	    	intentShare.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
+			intentShare.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
 	        context.startActivity(intentShare);
 		}
 		
